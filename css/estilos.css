@@ -1,0 +1,1004 @@
+/* ==========================================
+   CIVILHUB
+   ESTILO PROFESIONAL 2026
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    background:#0B3D91;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.20);
+
+}
+
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:white !important;
+
+    letter-spacing:1px;
+
+}
+
+
+nav{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:bold;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+    background:white;
+
+    color:#0B3D91;
+
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+height:430px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+background:url("../img/ingenieria.jpg") center/cover no-repeat;
+
+position:relative;
+
+color:white;
+
+}
+
+.hero-contenido{
+
+    position:relative;
+
+    z-index:2;
+
+    background:rgba(0,0,0,.55);
+
+    padding:35px 50px;
+
+    border-radius:15px;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,.65);
+
+}
+
+
+
+.hero h1,
+.hero p,
+.hero-botones{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+.hero h1{
+
+font-size:55px;
+
+max-width:900px;
+
+color:white;
+
+text-shadow:2px 3px 10px #000;
+
+margin-bottom:20px;
+
+}
+
+
+.hero h2{
+
+    font-size:55px;
+
+    font-weight:800;
+
+    color:white !important;
+
+    text-shadow:2px 3px 10px rgba(0,0,0,.9);
+
+}
+
+
+
+.hero p{
+
+    font-size:22px;
+
+    color:white !important;
+
+    text-shadow:2px 3px 10px rgba(0,0,0,.9);
+
+}
+
+/* ==========================================
+   SECCIONES
+========================================== */
+
+section{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:60px 0;
+
+}
+
+.titulo-seccion{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#0B3D91;
+
+    margin-bottom:45px;
+
+}
+
+/* ==========================================
+   BUSCADOR
+========================================== */
+
+.buscador{
+
+    width:100%;
+
+    max-width:520px;
+
+    margin:35px auto;
+
+    display:block;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+}
+
+.buscador:focus{
+
+    outline:none;
+
+    border-color:#0B57D0;
+
+    box-shadow:0 0 10px rgba(11,87,208,.20);
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+/* ==========================================
+   TARJETAS DE PRODUCTOS
+========================================== */
+
+.card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+.etiqueta{
+
+    background:#ff9800;
+
+    color:#fff;
+
+    padding:7px 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    margin:18px;
+
+    align-self:flex-start;
+
+}
+
+.producto-imagen{
+
+    padding:0 20px;
+
+}
+
+.producto-imagen img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    display:block;
+
+}
+
+.card h4{
+
+    color:#0B3D91;
+
+    font-size:23px;
+
+    margin:18px 20px 10px;
+
+}
+
+.estrellas{
+
+    color:#ff9800;
+
+    margin:0 20px 15px;
+
+    font-size:18px;
+
+}
+
+.card p{
+
+    margin:0 20px;
+
+    color:#555;
+
+    line-height:1.6;
+
+    flex:1;
+
+}
+
+.precio{
+
+    margin:20px;
+
+    color:#0B57D0;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+/* ==========================================
+   BOTONES
+========================================== */
+
+.botones{
+
+    display:flex;
+
+    gap:10px;
+
+    padding:0 20px 20px;
+
+}
+
+.btn-detalle{
+
+    flex:1;
+
+    text-align:center;
+
+    background:#eef3ff;
+
+    color:#0B3D91;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-detalle:hover{
+
+    background:#0B3D91;
+
+    color:#fff;
+
+}
+
+.botones button{
+
+    flex:1;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.botones button:hover{
+
+    background:#1EBE5D;
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================================
+   BOTONES GENERALES
+========================================== */
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    transition:.3s;
+
+}
+
+/* ==========================================
+   INFORMACIÓN
+========================================== */
+
+.info-paquete{
+
+    margin-top:30px;
+
+    padding:20px;
+
+    background:#f5f7fb;
+
+    border-left:5px solid #0B57D0;
+
+    border-radius:10px;
+
+}
+
+.info-paquete h3{
+
+    color:#0B57D0;
+
+    margin-bottom:8px;
+
+}
+
+.info-paquete p{
+
+    margin-bottom:15px;
+
+    color:#555;
+
+}
+/* ==========================================
+   PÁGINA DETALLE DEL PRODUCTO
+========================================== */
+
+.producto-detalle{
+
+max-width:1450px;
+
+margin:50px auto;
+
+padding:40px;
+
+display:flex;
+
+align-items:flex-start;
+
+justify-content:space-between;
+
+gap:60px;
+
+background:#fff;
+
+border-radius:18px;
+
+box-shadow:0 10px 35px rgba(0,0,0,.12);
+
+}
+
+.producto-img{
+
+flex:1.3;
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-start;
+
+}
+
+.producto-img img{
+
+width:100%;
+
+max-width:650px;
+
+height:auto;
+
+border-radius:15px;
+
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+transition:.3s;
+
+}
+
+.producto-img img:hover{
+
+transform:scale(1.03);
+
+}
+
+.producto-info{
+
+flex:1;
+
+}
+
+.producto-info h1{
+
+    font-size:38px;
+
+    color:#0B3D91;
+
+    margin-bottom:15px;
+
+}
+
+.producto-info h2{
+
+    font-size:34px;
+
+    color:#0B57D0;
+
+    margin:20px 0;
+
+}
+
+.producto-info p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+.producto-info h3{
+
+    color:#0B3D91;
+
+    margin-top:30px;
+
+    margin-bottom:15px;
+
+}
+
+.producto-info ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.producto-info li{
+
+    background:#f7f9fc;
+
+    margin-bottom:12px;
+
+    padding:14px 18px;
+
+    border-left:5px solid #25D366;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+}
+
+#btnComprar{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:18px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#btnComprar:hover{
+
+    background:#1EBE5D;
+
+    transform:translateY(-2px);
+
+}
+
+.producto-info a{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    color:#0B57D0;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+}
+
+.producto-info a:hover{
+
+    text-decoration:underline;
+
+}
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#0B3D91;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:35px;
+
+    margin-top:60px;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   BOTÓN WHATSAPP
+========================================== */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:65px;
+
+height:65px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:white;
+
+font-size:38px;
+
+text-decoration:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+z-index:9999;
+
+transition:.3s;
+
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.30);
+
+    background:#1EBE5D;
+
+}
+
+/* ==========================================
+   ESTADÍSTICAS
+========================================== */
+
+.estadisticas{
+
+    margin-top:40px;
+
+}
+
+.estadisticas .card{
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+.estadisticas h2{
+
+    color:#0B3D91;
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================================
+   RESPONSIVE TABLET
+========================================== */
+
+@media(max-width:992px){
+
+    .hero h1{
+
+        font-size:46px;
+
+    }
+
+    .hero h2{
+
+        font-size:42px;
+
+    }
+
+    .producto-detalle{
+
+        gap:30px;
+
+        padding:30px;
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE CELULAR
+========================================== */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        padding:15px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .hero{
+
+        height:auto;
+
+        padding:80px 20px;
+
+    }
+
+    .hero-contenido{
+
+        padding:25px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .hero h2{
+
+        font-size:32px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+    .titulo-seccion{
+
+        font-size:32px;
+
+    }
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .producto-detalle{
+
+        flex-direction:column;
+
+        padding:25px;
+
+    }
+
+    .producto-img{
+
+        position:static;
+
+        width:100%;
+
+    }
+
+    .producto-img img{
+
+        max-width:320px;
+
+    }
+
+    .producto-info{
+
+        text-align:center;
+
+    }
+
+    .producto-info ul{
+
+        text-align:left;
+
+    }
+
+    .botones{
+
+        flex-direction:column;
+
+    }
+
+    .whatsapp{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:32px;
+
+    }
+
+}
+.hero-botones{
+
+display:flex;
+
+gap:25px;
+
+margin-top:30px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+.hero-botones button{
+
+padding:16px 35px;
+
+font-size:18px;
+
+font-weight:bold;
+
+border-radius:50px;
+
+border:none;
+
+background:#0B57D0;
+
+color:white;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+
+.hero-botones button:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+
+.hero-botones .btn2{
+
+background:#25D366;
+
+}
+/* ==========================================
+   FIN DEL CSS
+========================================== */
