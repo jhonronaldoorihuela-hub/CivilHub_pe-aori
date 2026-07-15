@@ -404,33 +404,45 @@ section{
 
 }
 
-.btn-detalle{
+/*==============================
+BOTÓN DESCARGAR GRATIS
+==============================*/
 
-    flex:1;
+.btn-descargar{
 
-    text-align:center;
+display:block;
 
-    background:#eef3ff;
+width:100%;
 
-    color:#0B3D91;
+text-align:center;
 
-    text-decoration:none;
+background:#0B57D0;
 
-    padding:14px;
+color:white;
 
-    border-radius:10px;
+padding:15px;
 
-    font-weight:bold;
+border-radius:10px;
 
-    transition:.3s;
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+margin-top:15px;
+
+transition:.3s;
 
 }
 
-.btn-detalle:hover{
+.btn-descargar:hover{
 
-    background:#0B3D91;
+background:#084298;
 
-    color:#fff;
+transform:translateY(-3px);
+
+box-shadow:0 8px 20px rgba(0,0,0,.2);
 
 }
 
